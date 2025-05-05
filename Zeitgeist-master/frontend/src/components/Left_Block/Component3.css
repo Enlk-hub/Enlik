@@ -53,6 +53,7 @@
   line-height: 1.5;
   color: var(--color-dimgray);
   margin-bottom: 10px;
+  word-break: break-all;
 }
 
 .news-author-info {
@@ -99,5 +100,6 @@
   
   .news-item-description {
     font-size: 16px;
+    word-break: break-all;
   }
 }

@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import "./Component4.css";
 import { useNews } from "../../service/NewsContext";
+import { Link } from "react-router-dom";
 
 function Component4({ className = "" , newsId}) {
     const { getNewsById } = useNews();
@@ -37,12 +38,13 @@ function Component4({ className = "" , newsId}) {
                               </div>
                           </div>
                       </div>
-
+                      <Link to={`/news/${newsId}`} className="news-title-link">
                       <div className="featured-title">
                           <h1 className="their-time-is1">
                             {newsItem.title}
                           </h1>
                       </div>
+                      </Link>
 
                       <div className="the-murder-of1">
                           <h3 className="the-murder-of">

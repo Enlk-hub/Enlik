@@ -23,13 +23,11 @@ function Main({ className = "", newsId }) {
         src="/main-article-background.svg"
       />
 
-      <Link to={`/news/${newsId}`} className="main-article-link">
-        <div
-          className="main-article-image" 
-          style={{backgroundImage: `url(${newsItem.image})`}}
-          aria-label={newsItem.title}
-        />
-      </Link>
+      <img
+        alt=""
+        className="main-article-image"
+        src={newsItem.image}
+      />
 
       <div className="main-article-content">
         <div className="frame-group">

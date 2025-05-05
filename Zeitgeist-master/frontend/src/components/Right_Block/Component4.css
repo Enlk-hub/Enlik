@@ -29,7 +29,7 @@
 }
 
 .featured-image-placeholder {
-  background-size: contain;
+  background-size: cover;
   /* Add a filter to make it grayscale by default */
   filter: grayscale(100%);
   /* Add a smooth transition */

@@ -18,7 +18,7 @@ def get_db_connection():
         port='5432',
         database='zeitgeist',
         user='postgres',
-        password='123456'
+        password='0000'
     )
     conn.autocommit = False
     return conn

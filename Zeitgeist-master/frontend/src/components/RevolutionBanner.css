@@ -124,7 +124,7 @@
 
   .side-news-content2 {
     margin-left: 0;
-    gap: var(--gap-sm);
+    gap: 70px;
   }
 
   .main-side-news {

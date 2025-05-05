@@ -11,9 +11,7 @@ function Component3({ className = "", newsId }) {
   
   return (
     <div className={`div3 ${className}`}>
-      <Link to={`/news/${newsId}`} className="news-detail-link">
-        <div className="image-placeholder" style={{backgroundImage: `url(${newsItem.image})`}} />
-      </Link>
+              <div className="image-placeholder" style={{backgroundImage: `url(${newsItem.image})`}} />
 
       <div className="side-image-news-details">
         <div className="news-category-tag">

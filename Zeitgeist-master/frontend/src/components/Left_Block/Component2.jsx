@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import "./Component2.css";
 import { useNews } from "../../service/NewsContext";
+import { Link } from "react-router-dom";
 
 function Component2({ className = "", newsId }) {
   const { getNewsById } = useNews();
@@ -20,10 +21,12 @@ function Component2({ className = "", newsId }) {
                   <div className="news-line" />
                 </div>
               </div>
+              <Link to={`/news/${newsId}`} className="news-title-link">
               <div className="first-news-author flex-container">
                 <h1 className="news-title text-base">{newsItem.title}</h1>
                 <b className="news-author text-base">BY {newsItem.author}</b>
               </div>
+              </Link>
             </div>
           </div>
         </div>
