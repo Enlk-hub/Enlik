@@ -167,7 +167,7 @@ def add_user(user, password):
     cursor = conn.cursor()
     
     # Хешируем пароль на уровне базы данных
-    password_hash = hash_password(password)  # Используем функцию hash_password из database.py
+    password_hash = hash_password(password)
     
     try:
         cursor.execute('''

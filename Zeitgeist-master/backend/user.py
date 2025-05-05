@@ -1,4 +1,3 @@
-# user.py
 class User:
     def __init__(self, id=None, username=None, password_hash=None, email=None, role='user'):
         self.id = id

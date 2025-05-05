@@ -1,4 +1,3 @@
-# app.py
 from flask import Flask
 from flask_cors import CORS
 from routes import api_bp
@@ -16,8 +15,7 @@ app.register_blueprint(api_bp, url_prefix='/api')
 app.register_blueprint(auth_bp, url_prefix='/auth')
 app.register_blueprint(admin_bp, url_prefix='/admin')
 
-# Инициализируем базу данных при запуске
-# Инициализируем базу данных при запуске
+
 with app.app_context():
     # Проверяем, существует ли БД
     db_exists = os.path.exists(db.DATABASE_PATH)
@@ -92,7 +90,7 @@ with app.app_context():
         except Exception as e:
             print(f"Ошибка при импорте данных: {e}")
     
-    db.create_admin_if_not_exists()  # Создаем администратора, если его нет
+    db.create_admin_if_not_exists()
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

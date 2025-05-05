@@ -1,4 +1,3 @@
-# routes.py
 from flask import Blueprint, jsonify, request
 import database as db
 from models import NewsItem, Collection, NewsAudio

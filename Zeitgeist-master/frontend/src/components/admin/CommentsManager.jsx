@@ -1,4 +1,3 @@
-// components/admin/CommentsManager.jsx
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../service/AuthContext';
 
